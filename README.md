@@ -44,6 +44,20 @@ I can give you most of a website for satRdays events, ready (almost) out of the 
 If you want to have a website set up, please request this in the #satrdays-website slack channel of the R User Group organizers Slack (rusergroups.slack.com), tagging @DaveParr.
 
 ## Organiser tasks
+
+### Build locally
+
+You can locally build your site using the shell command `hugo serve` in the working directory of the project, as long as you have it [installed on your machine](https://gohugo.io/getting-started/installing/). You can then open you browser to the link that is listed in the message (probably localhost:1313), and see your changes. Hugo features fast builds and hot-reload so you should be able to see _most_ changes simply after saving the relevant file.
+
+#### Initialise the sub-modules
+
+When you locally clone your events repo to your machine, the first time you build the project you _might_ need to initialise the sub-modules which contain the theme. You do this in 2 shell commands in the working directory of the project.
+
+```
+git submodule init
+git submodule update
+```
+
 ### Edit the base url in `config.toml`
 Change 
 ```
