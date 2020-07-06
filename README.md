@@ -51,11 +51,16 @@ You can locally build your site using the shell command `hugo serve` in the work
 
 #### Initialise the sub-modules
 
-When you locally clone your events repo to your machine, the first time you build the project you _might_ need to initialise the sub-modules which contain the theme. You do this in 2 shell commands in the working directory of the project.
+When you locally clone your events repo to your machine, the first time you build the project you _might_ need to initialise the sub-modules which contain the theme. You can avoid this by cloning with the `--recurse-submodules` option, similar to this:
 
 ```
-git submodule init
-git submodule update
+git clone --recurse-submodules https://github.com/satrdays/[my_conference_repo]
+```
+
+If you fogot that, you can always run this command _after_ you cloned the repo normally:
+
+```
+git submodule update --init
 ```
 
 ### Edit the base url in `config.toml`
