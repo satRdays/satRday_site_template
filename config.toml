@@ -193,12 +193,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     subtitle = "Who's saying what"
     bg = true
 
-    [params.portfolio.modal]
-      client = "Client"
-      date = "Date"
-      category = "Category"
-      buttonText = "Close project"
-
   # Schedule section
   [params.schedule]
     enable = true
