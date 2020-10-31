@@ -87,10 +87,13 @@ A high level overview of these features:
 * `eid`/`accountevent`/`eventviewid`/`CfSpage`
   + strings that are part of a url (that are usually part of an iframe) to link to a service for tickets/Call for papers
 
-### Include a new speaker and talk
-
-* The information for talks and their speakers is linked in the single `Talk0X.yaml` files in `data/schedule/`
+### Include a new talk desciption
+* Talks are generated from `Talk0X.yaml` files in `data/projects/`
 * Each talk should have similar structures (some values may be missed or blank) based on the included examples, and be in its own file
+
+### Include a new bio
+* Speaker/organiser bios are generated from `Speaker0X.toml` files in `data/speakers/`
+* Each speaker should have similar structures (some values may be missed or blank) based on the included examples, and be in its own file
 
 ## What if I need even more customistation?
 In the hopefully rare event that even more specific material is needed you can explore the following. Make use of the [hugo inheritance method](https://gohugo.io/templates/lookup-order/#hugo-layouts-lookup-rules-with-theme) to override defaults where applicable, rather than modify the defaults in place.
@@ -106,7 +109,7 @@ In the hopefully rare event that even more specific material is needed you can e
 * then make sure that it is referenced in `index.html`
 
 ## What I am
-I am a [Hugo](//gohugo.io) website, with a theme sub-module. [Agency](https://github.com/digitalcraftsman/hugo-agency-theme) used to provide a bunch of defaults that we built on-top of, but after [this discussion](https://github.com/satRdays/hugo-satrdays-theme/pull/37) we migrated the peices we needed, and now only rely on the [satRday](https://github.com/satRdays/hugo-satrdays-theme) theme only.
+I am a [Hugo](//gohugo.io) website, with two themes. [Agency](https://github.com/digitalcraftsman/hugo-agency-theme) provides the base layer of theming, with a custom [satRday](https://github.com/satRdays/hugo-satrdays-theme) theme which overides some areas.
 
 More information on installing [hugo](https://gohugo.io/getting-started/installing/), including setting it up for [local previews](https://gohugo.io/getting-started/usage/) can be found in the official docs.
 
