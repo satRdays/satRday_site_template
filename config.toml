@@ -2,7 +2,7 @@
 baseurl = "https://eventtemplate.satrdays.org" # Change this to the base url after netlify deploy, e.g. "https://cardiff2019.satrdays.org/"
 languageCode = "en-us"
 title = "satRday"
-theme = "hugo-satrdays-theme"
+theme = ["hugo-satrdays-theme", "hugo-agency-theme"]
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
@@ -192,6 +192,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     title = "Talks"
     subtitle = "Who's saying what"
     bg = true
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
 
   # Schedule section
   [params.schedule]
