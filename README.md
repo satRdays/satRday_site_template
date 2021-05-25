@@ -122,7 +122,7 @@ As the design is strongly based on the `hugo-agency-theme`, naming conventions a
 
 ## Administrator tasks
 
-### Set the repo as a mirror the main repository
+### Traditional method - Set the repo as a mirror the main repository
 
 1. Open Git Bash (or your command-line interpreter).
 
@@ -152,6 +152,22 @@ rm -rf satRday_site_template.git
 
 6. Add the GitHub Team to the repo you made as 'Admin'
 
+### New cool method - Set the repo up from template
+
+1. Press the 'Use this template' button
+
+2. Set the owner of the repo to be 'satrdays' organisation
+
+3. Set the repository name to be `[cityYEAR]`
+
+4. Set the repo to be 'Public'
+
+5. Create repository from template
+
+6. Make a GitHub Team and add the conference organisers as members
+
+7. Add the GitHub Team to the repo you made as 'Admin'
+
 There is now WIP on automating deployment using the scripts in [this repo](https://github.com/satRdays/automation)
 
 ### Netlify
@@ -160,6 +176,6 @@ There is now WIP on automating deployment using the scripts in [this repo](https
 
 2. The build command is `hugo` the build directory is `public`
 
-2. Rename the default domain to [cityYEAR].netlify.com
+3. Rename the default domain to [cityYEAR].netlify.com
 
-3. Add the additional domain [cityYEAR].satrdays.com
+4. Add the additional domain [cityYEAR].satrdays.com
