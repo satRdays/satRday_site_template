@@ -78,8 +78,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
   # Hero section
   [params.hero]
-    # To change the background image of the hero, replace 'header-bg.jpg' in
-    # the 'static/img' folder.
+    # To change the background image of the hero, place a file called 'header-bg.jpg' in the static/img folder of your site
+    # e.g. [mycityXXXX]/static/img/header-bg.jpg
+    # This will automatically override the file in themes/hugo-satrdays-theme because of hugos inheritance preferences
+    # Hugo will first look in the project folder [mycityXXXX]/static/img/header-bg.jpg 
+    # and then if it finds nothing it will look in [mycityXXXX]/themes/hugo-satrdays-theme/static/img/header-bg.jpg and get the default
+    # https://gohugo.io/hugo-modules/theme-components/
     title = "satRday [My City]"
     subtitle = "A conference for users of the R Language on [Conference Date]"
     bg = true
